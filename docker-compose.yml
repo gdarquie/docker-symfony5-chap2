@@ -1,0 +1,13 @@
+version: '3'
+services:
+  webserver:
+    image: nginx:latest
+    ports:
+      - "8000:80"
+  symfony:
+    build: docker/symfony
+#    ports:
+#      - '9000:9000'
+#    volumes:
+#      - ../:/var/www/symfony:cached
+#      - ./logs/symfony:/var/www/symfony/var/logs:cached
